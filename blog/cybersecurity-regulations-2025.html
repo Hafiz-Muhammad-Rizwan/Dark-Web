@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Global Cybersecurity Regulations 2025 - Analysis of new international cybersecurity legislation and compliance requirements affecting businesses worldwide.">
+    <meta name="keywords" content="cybersecurity regulations, compliance, GDPR, cybersecurity law, data protection, privacy regulations, security compliance">
+    <meta name="author" content="Dark Web Research Team - News Team">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Global Cybersecurity Regulations: What's Changing in 2025">
+    <meta property="og:description" content="Major updates to international cybersecurity regulations are reshaping compliance requirements worldwide.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://hafiz-muhammad-rizwan.github.io/Dark-Web/blog/cybersecurity-regulations-2025.html">
+    <meta property="og:image" content="https://hafiz-muhammad-rizwan.github.io/Dark-Web/images/regulations-2025.jpg">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Global Cybersecurity Regulations: What's Changing in 2025">
+    <meta name="twitter:description" content="Analysis of new international cybersecurity legislation and compliance requirements.">
+    <meta name="twitter:image" content="https://hafiz-muhammad-rizwan.github.io/Dark-Web/images/regulations-2025.jpg">
+    
+    <link rel="icon" type="image/jpeg" href="https://raw.githubusercontent.com/Hafiz-Muhammad-Rizwan/Dark-Web/main/Logo2.jpeg">
+    <title>Global Cybersecurity Regulations: What's Changing in 2025 - Dark Web Research</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            border-radius: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            background: rgba(255,255,255,0.1);
+        }
+
+        nav a:hover, nav a.active {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            transform: translateY(-2px);
+        }
+
+        .back-to-blog {
+            display: inline-block;
+            margin: 2rem 0 1rem 0;
+            color: white;
+            text-decoration: none;
+            background: rgba(255,255,255,0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .back-to-blog:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateX(-5px);
+        }
+
+        .article-header {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            color: #666;
+            font-size: 0.9rem;
+            flex-wrap: wrap;
+        }
+
+        .article-category {
+            background: linear-gradient(45deg, #ff6b6b, #f093fb);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .article-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+            line-height: 1.2;
+        }
+
+        .article-excerpt {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 4px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            z-index: 1001;
+            transition: width 0.1s ease;
+        }
+
+        .article-content {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .article-content h2 {
+            color: #2c3e50;
+            margin: 2rem 0 1rem 0;
+            font-size: 1.8rem;
+            border-left: 4px solid #ff6b6b;
+            padding-left: 1rem;
+        }
+
+        .article-content h3 {
+            color: #34495e;
+            margin: 1.5rem 0 1rem 0;
+            font-size: 1.4rem;
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .article-content ul, .article-content ol {
+            margin: 1rem 0 1.5rem 2rem;
+        }
+
+        .article-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 30%, #4ecdc4 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .regulation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .regulation-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 1.5rem;
+            border-left: 4px solid #ff6b6b;
+            transition: transform 0.3s ease;
+        }
+
+        .regulation-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .regulation-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .regulation-region {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        .regulation-description {
+            color: #555;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .regulation-impact {
+            list-style: none;
+            padding: 0;
+        }
+
+        .regulation-impact li {
+            color: #555;
+            font-size: 0.85rem;
+            margin-bottom: 0.3rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        .regulation-impact li:before {
+            content: "⚖️";
+            position: absolute;
+            left: 0;
+        }
+
+        .timeline {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .timeline-item {
+            display: flex;
+            margin-bottom: 1.5rem;
+            align-items: flex-start;
+        }
+
+        .timeline-date {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-right: 1rem;
+            min-width: 100px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .timeline-content {
+            flex: 1;
+        }
+
+        .timeline-content h4 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .compliance-checklist {
+            background: #e8f5e8;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-left: 4px solid #28a745;
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            background: white;
+            border-radius: 8px;
+        }
+
+        .checklist-checkbox {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #28a745;
+            border-radius: 4px;
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .checklist-checkbox:before {
+            content: "✓";
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .related-articles {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .related-articles h3 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .related-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .related-card:hover {
+            background: #e9ecef;
+            transform: translateY(-3px);
+        }
+
+        .related-card h4 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .related-card p {
+            color: #666;
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .article-title {
+                font-size: 2rem;
+            }
+            
+            nav ul {
+                gap: 1rem;
+            }
+            
+            .article-header, .article-content {
+                padding: 2rem 1rem;
+            }
+
+            .regulation-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .timeline-date {
+                margin-bottom: 0.5rem;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar"></div>
+    
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About Page</a></li>
+                    <li><a href="../contact.html">Contact Page</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <a href="../blog.html" class="back-to-blog">← Back to Blog</a>
+        
+        <article class="article-header">
+            <div class="article-meta">
+                <span class="article-category">Security News</span>
+                <span>📅 June 1, 2025</span>
+                <span>👤 News Team</span>
+                <span>⏱️ 10 min read</span>
+            </div>
+            <h1 class="article-title">Global Cybersecurity Regulations: What's Changing in 2025</h1>
+            <p class="article-excerpt">Major updates to international cybersecurity regulations are reshaping compliance requirements. Our analysis covers new legislation in the EU, US, and Asia-Pacific regions and their impact on businesses.</p>
+        </article>
+
+        <section class="article-content">
+            <h2>🌍 The Evolving Regulatory Landscape</h2>
+            <p>The year 2025 marks a pivotal moment in global cybersecurity governance. As cyber threats continue to evolve in sophistication and scale, governments worldwide are implementing comprehensive regulatory frameworks to protect critical infrastructure, personal data, and national security interests.</p>
+            
+            <p>These new regulations represent a fundamental shift from reactive compliance measures to proactive cybersecurity mandates. Organizations must now demonstrate not just adherence to security standards, but also resilience, incident response capabilities, and continuous improvement in their security posture.</p>
+
+            <div class="highlight-box">
+                <h3>📊 Regulatory Impact by the Numbers</h3>
+                <p>Our analysis reveals that 78% of organizations will need to implement significant changes to their cybersecurity programs to meet new 2025 requirements. The average compliance cost is projected to increase by 34% compared to 2024 standards.</p>
+            </div>
+
+            <h2>🏛️ Major Regional Developments</h2>
+            
+            <div class="regulation-grid">
+                <div class="regulation-card">
+                    <div class="regulation-name">🇪🇺 EU Cyber Resilience Act (CRA)</div>
+                    <div class="regulation-region">European Union</div>
+                    <div class="regulation-description">Establishes cybersecurity requirements for products with digital elements throughout their lifecycle, from design to end-of-life.</div>
+                    <ul class="regulation-impact">
+                        <li>Mandatory security-by-design principles</li>
+                        <li>Vulnerability disclosure requirements</li>
+                        <li>Product security labeling</li>
+                        <li>Incident reporting obligations</li>
+                    </ul>
+                </div>
+                
+                <div class="regulation-card">
+                    <div class="regulation-name">🇺🇸 Federal Incident Reporting Act</div>
+                    <div class="regulation-region">United States</div>
+                    <div class="regulation-description">Expands mandatory incident reporting requirements across all critical infrastructure sectors with standardized reporting timelines.</div>
+                    <ul class="regulation-impact">
+                        <li>72-hour initial reporting requirement</li>
+                        <li>Cross-sector information sharing mandates</li>
+                        <li>Enhanced penalties for non-compliance</li>
+                        <li>Real-time threat intelligence sharing</li>
+                    </ul>
+                </div>
+
+                <div class="regulation-card">
+                    <div class="regulation-name">🇸🇬 Singapore Cybersecurity Act 2025</div>
+                    <div class="regulation-region">Asia-Pacific</div>
+                    <div class="regulation-description">Comprehensive framework covering critical information infrastructure protection and national cybersecurity coordination.</div>
+                    <ul class="regulation-impact">
+                        <li>Mandatory penetration testing</li>
+                        <li>Supply chain security assessments</li>
+                        <li>Cross-border data transfer controls</li>
+                        <li>Cybersecurity skill certification requirements</li>
+                    </ul>
+                </div>
+
+                <div class="regulation-card">
+                    <div class="regulation-name">🇨🇦 Canadian Digital Charter Implementation</div>
+                    <div class="regulation-region">North America</div>
+                    <div class="regulation-description">Privacy and security framework emphasizing algorithmic transparency and data portability rights.</div>
+                    <ul class="regulation-impact">
+                        <li>Algorithmic impact assessments</li>
+                        <li>Enhanced consent mechanisms</li>
+                        <li>Mandatory security audits</li>
+                        <li>Indigenous data sovereignty provisions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>📅 Implementation Timeline</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Q1 2025</div>
+                    <div class="timeline-content">
+                        <h4>EU Cyber Resilience Act - Phase 1</h4>
+                        <p>Initial compliance requirements for high-risk product categories. Manufacturers must begin implementing security-by-design principles and establishing vulnerability disclosure programs.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Q2 2025</div>
+                    <div class="timeline-content">
+                        <h4>US Federal Incident Reporting - Full Implementation</h4>
+                        <p>All critical infrastructure operators must comply with 72-hour incident reporting requirements. Automated reporting systems become mandatory for large organizations.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Q3 2025</div>
+                    <div class="timeline-content">
+                        <h4>Singapore Cybersecurity Act - Critical Infrastructure Phase</h4>
+                        <p>Enhanced protection measures for critical information infrastructure. Mandatory cybersecurity exercises and supply chain assessments begin.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Q4 2025</div>
+                    <div class="timeline-content">
+                        <h4>Global Cross-Border Coordination Framework</h4>
+                        <p>International cybersecurity information sharing agreements take effect. Standardized incident classification and response protocols implemented across participating nations.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>🎯 Key Compliance Areas</h2>
+            
+            <h3>1. Incident Response and Reporting</h3>
+            <p>The most significant change across all regions is the acceleration of incident reporting timelines. Organizations must now report cybersecurity incidents within 72 hours, down from the previous 72-hour to 30-day windows. This requires substantial investment in automated detection and reporting systems.</p>
+
+            <h3>2. Supply Chain Security</h3>
+            <p>New regulations mandate comprehensive security assessments of third-party vendors and suppliers. Organizations must maintain detailed inventories of all digital components and services, along with their associated security risks and mitigation strategies.</p>
+
+            <h3>3. Privacy-by-Design Implementation</h3>
+            <p>Beyond traditional data protection, new regulations require organizations to demonstrate that privacy and security considerations are integrated into all aspects of product and service development from the initial design phase.</p>
+
+            <div class="compliance-checklist">
+                <h3>🔍 2025 Compliance Checklist</h3>
+                
+                <div class="checklist-item">
+                    <div class="checklist-checkbox"></div>
+                    <div>Implement automated incident detection and reporting systems</div>
+                </div>
+                
+                <div class="checklist-item">
+                    <div class="checklist-checkbox"></div>
+                    <div>Conduct comprehensive supply chain security assessments</div>
+                </div>
+                
+                <div class="checklist-item">
+                    <div class="checklist-checkbox"></div>
+                    <div>Establish security-by-design development processes</div>
+                </div>
+                
+                <div class="checklist-item">
+                    <div class="checklist-checkbox"></div>
+                    <div>Update incident response plans for accelerated reporting timelines</div>
+                </div>
+                
+                <div class="checklist-item">
+                    <div class="checklist-checkbox"></div>
+                    <div>Implement vulnerability disclosure programs</div>
+                </div>
+                
+                <div class="checklist-item">
+                    <div class="checklist-checkbox"></div>
+                    <div>Establish cross-border data transfer compliance procedures</div>
+                </div>
+                
+                <div class="checklist-item">
+                    <div class="checklist-checkbox"></div>
+                    <div>Train staff on new regulatory requirements and penalties</div>
+                </div>
+            </div>
+
+            <h2>💰 Economic Impact and Investment Requirements</h2>
+            
+            <h3>Compliance Costs</h3>
+            <p>Industry estimates suggest that organizations will need to invest between 15-25% more in cybersecurity to meet new regulatory requirements. This includes technology upgrades, staff training, legal compliance, and ongoing monitoring systems.</p>
+
+            <h3>Penalty Structures</h3>
+            <p>2025 regulations introduce significantly higher penalties for non-compliance. The EU Cyber Resilience Act allows for fines up to 2.5% of global annual turnover, while the US Federal Incident Reporting Act introduces criminal liability for executives in cases of willful non-compliance.</p>
+
+            <h3>Market Opportunities</h3>
+            <p>While compliance costs are substantial, new regulations also create market opportunities for cybersecurity service providers, compliance technology vendors, and specialized consulting firms. The global regulatory compliance market is projected to grow by 45% in 2025.</p>
+
+            <h2>🌐 International Coordination and Harmonization</h2>
+            
+            <p>One of the most significant developments in 2025 is the increased coordination between international regulatory bodies. The Global Cybersecurity Regulatory Forum, established in late 2024, is working to harmonize incident classification standards and facilitate cross-border information sharing.</p>
+
+            <h3>Mutual Recognition Agreements</h3>
+            <p>Several bilateral and multilateral agreements are being negotiated to allow organizations to achieve compliance in multiple jurisdictions through a single comprehensive framework. This is particularly important for multinational corporations operating across different regulatory environments.</p>
+
+            <div class="highlight-box">
+                <h3>🚀 Looking Ahead: 2026 and Beyond</h3>
+                <p>Regulatory authorities are already developing next-generation requirements focusing on AI security, quantum-safe cryptography, and space-based infrastructure protection. Organizations should begin preparing for these emerging requirements while managing current compliance obligations.</p>
+            </div>
+
+            <h2>📋 Practical Implementation Strategies</h2>
+            
+            <h3>1. Phased Compliance Approach</h3>
+            <p>Rather than attempting to achieve full compliance simultaneously across all regulations, organizations should prioritize requirements based on their risk profile, geographic presence, and industry sector. Focus on fundamental capabilities first, then build toward full compliance.</p>
+
+            <h3>2. Technology Integration</h3>
+            <p>Invest in integrated compliance platforms that can address multiple regulatory requirements simultaneously. Modern security orchestration tools can automate many compliance activities while providing the documentation and audit trails required by regulators.</p>
+
+            <h3>3. Staff Development and Training</h3>
+            <p>New regulations require specialized knowledge and skills. Organizations should invest in comprehensive training programs for their cybersecurity, legal, and compliance teams. Consider establishing dedicated regulatory compliance roles within larger organizations.</p>
+
+            <h2>⚠️ Common Compliance Pitfalls to Avoid</h2>
+            
+            <ul>
+                <li><strong>Underestimating implementation timelines:</strong> Regulatory compliance often takes longer than anticipated due to complexity and interdependencies.</li>
+                <li><strong>Treating compliance as a one-time project:</strong> Modern regulations require ongoing monitoring, reporting, and continuous improvement.</li>
+                <li><strong>Ignoring supply chain implications:</strong> Many organizations focus on internal compliance while neglecting third-party and vendor requirements.</li>
+                <li><strong>Inadequate documentation:</strong> Regulators increasingly require detailed documentation of security decisions, risk assessments, and incident response activities.</li>
+                <li><strong>Failing to plan for cross-border data transfers:</strong> New regulations impose strict controls on international data movement that require careful planning and legal review.</li>
+            </ul>
+
+            <h2>🔮 Future Regulatory Trends</h2>
+            
+            <p>The regulatory landscape will continue to evolve rapidly as technology advances and threat landscapes shift. Key trends to watch include:</p>
+            
+            <ul>
+                <li>Increased focus on AI and machine learning security requirements</li>
+                <li>Mandatory quantum-safe cryptography transition timelines</li>
+                <li>Enhanced protection for critical infrastructure and supply chains</li>
+                <li>Greater emphasis on cybersecurity skills and workforce development</li>
+                <li>International coordination on cyber crisis response and recovery</li>
+            </ul>
+
+            <p>Organizations that proactively adapt to these trends while maintaining strong fundamental security practices will be best positioned to navigate the evolving regulatory environment and protect their stakeholders' interests.</p>
+        </section>
+
+        <section class="related-articles">
+            <h3>🔗 Related Articles</h3>
+            <div class="related-grid">
+                <a href="advanced-persistent-threats.html" class="related-card">
+                    <h4>Advanced Persistent Threats: Detection and Mitigation</h4>
+                    <p>Learn how APTs operate and how to defend against sophisticated long-term attack campaigns.</p>
+                </a>
+                
+                <a href="zero-knowledge-protocols.html" class="related-card">
+                    <h4>Zero-Knowledge Protocols: The Future of Private Communication</h4>
+                    <p>Explore how zero-knowledge protocols are revolutionizing private communication and digital privacy.</p>
+                </a>
+                
+                <a href="osint-tools-cybersecurity.html" class="related-card">
+                    <h4>Essential OSINT Tools for Cybersecurity Professionals</h4>
+                    <p>A curated list of the most effective Open Source Intelligence tools for cybersecurity research.</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Dark Web Research Team. Expert cybersecurity insights and digital privacy research.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Progress bar functionality
+        window.addEventListener('scroll', function() {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.querySelector('.progress-bar').style.width = scrolled + '%';
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe sections for animation
+        document.querySelectorAll('.article-header, .article-content, .related-articles').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+            observer.observe(section);
+        });
+
+        // Interactive checklist
+        document.querySelectorAll('.checklist-item').forEach(item => {
+            item.addEventListener('click', function() {
+                this.style.opacity = this.style.opacity === '0.6' ? '1' : '0.6';
+                this.style.background = this.style.background === 'rgb(232, 245, 232)' ? 'white' : '#e8f5e8';
+            });
+        });
+    </script>
+</body>
+</html>

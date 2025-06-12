@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <meta name="description" content="About Dark Web Research - Learn about my mission to provide cybersecurity awareness and protect privacy in our rapidly changing digital world.">
+    <meta name="keywords" content="cybersecurity awareness, digital privacy, online safety education, privacy protection, digital security">
+    <meta name="author" content="Hafiz Muhammad Rizwan">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="About Dark Web Research - Cybersecurity Awareness Initiative">
+    <meta property="og:description" content="Personal mission to educate people about cybersecurity and privacy protection in the modern digital age.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hafiz-muhammad-rizwan.github.io/Dark-Web/about.html">
+    <meta property="og:image" content="https://hafiz-muhammad-rizwan.github.io/Dark-Web/images/privacy-awareness.jpg">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Dark Web Research">
+    <meta name="twitter:description" content="Cybersecurity awareness and privacy protection education for the modern digital age.">
+    <meta name="twitter:image" content="https://hafiz-muhammad-rizwan.github.io/Dark-Web/images/privacy-awareness.jpg">
+    
+    <link rel="icon" type="image/jpeg" href="https://raw.githubusercontent.com/Hafiz-Muhammad-Rizwan/Dark-Web/main/Logo2.jpeg">
+    <title>About Me - Dark Web Research & Privacy Awareness</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 1rem;
+        }        nav {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            border-radius: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            background: rgba(255,255,255,0.1);
+        }
+
+        nav a:hover, nav a.active {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            transform: translateY(-2px);
+        }
+
+        main {
+            background: white;
+            margin: 2rem 0;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .section {
+            padding: 3rem 2rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            margin: 2rem 0 1rem;
+            color: #2c3e50;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .team-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transform: translateY(0);
+            transition: transform 0.3s ease;
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .team-avatar {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .mission-section {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            margin: 2rem 0;
+            border-radius: 15px;
+            padding: 3rem 2rem;
+        }
+
+        .mission-section h2,
+        .mission-section h3 {
+            color: white;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .value-card {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .value-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .stats-section {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 3rem 2rem;
+            margin: 2rem 0;
+            border-radius: 15px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: rgba(255,255,255,0.7);
+            border-radius: 10px;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline {
+            position: relative;
+            margin: 2rem 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin: 2rem 0;
+            padding: 0 2rem;
+        }
+
+        .timeline-item:nth-child(odd) {
+            text-align: right;
+            margin-right: 50%;
+            padding-right: 4rem;
+        }
+
+        .timeline-item:nth-child(even) {
+            text-align: left;
+            margin-left: 50%;
+            padding-left: 4rem;
+        }
+
+        .timeline-date {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        .timeline-content {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            nav ul {
+                gap: 1rem;
+            }
+            
+            .section {
+                padding: 2rem 1rem;
+            }
+
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item:nth-child(odd),
+            .timeline-item:nth-child(even) {
+                margin-left: 0;
+                margin-right: 0;
+                padding-left: 3rem;
+                padding-right: 1rem;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>    <header>
+        <div class="container">
+            <div class="header-content">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html" class="active">About Page</a></li>
+                        <li><a href="contact.html">Contact Page</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">        <section class="hero-section">
+            <h2>About This Initiative</h2>
+            <p>I am an individual cybersecurity researcher dedicated to raising awareness about digital privacy and online security in our rapidly changing world. My mission is to educate people about the evolving threats to their privacy and provide practical knowledge to protect themselves in the modern digital landscape.</p>
+        </section>
+
+        <section class="section">
+            <h2>My Mission</h2>
+            <div class="mission-section">
+                <h3>🚨 Raise Privacy Awareness</h3>
+                <p>In today's interconnected world, our privacy is under constant threat. From data breaches to surveillance capitalism, I aim to educate people about how dramatically the digital landscape has changed and what risks they face every day online.</p>
+                
+                <h3>🛡️ Empower Digital Self-Defense</h3>
+                <p>Knowledge is the best defense. I provide practical, actionable information to help individuals protect their digital identity, secure their communications, and maintain their privacy in an increasingly monitored world.</p>
+                
+                <h3>🌐 Bridge the Knowledge Gap</h3>
+                <p>The rapid pace of technological change has left many people unaware of new privacy risks. I work to translate complex cybersecurity concepts into understandable guidance for everyday internet users.</p>
+            </div>
+        </section>        <section class="section">
+            <h2>My Core Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">🔍</div>
+                    <h3>Truth & Accuracy</h3>
+                    <p>I believe in providing factual, well-researched information about cybersecurity threats and privacy risks, without sensationalism or fear-mongering.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">📚</div>
+                    <h3>Education First</h3>
+                    <p>My focus is on education and empowerment. I aim to give people the knowledge they need to make informed decisions about their digital lives.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <h3>Accessibility</h3>
+                    <p>Cybersecurity knowledge shouldn't be limited to experts. I strive to make complex topics understandable for people from all backgrounds and technical levels.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">⚖️</div>
+                    <h3>Ethical Responsibility</h3>
+                    <p>I promote legal, ethical approaches to cybersecurity and privacy protection, always encouraging responsible behavior in the digital realm.</p>
+                </div>
+            </div>
+        </section>        <section class="section">
+            <h2>About Me</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">HR</div>
+                    <h3>Hafiz Muhammad Rizwan</h3>
+                    <p><strong>Cybersecurity Researcher & Privacy Advocate</strong></p>
+                    <p>I'm passionate about cybersecurity and digital privacy. With years of experience in cybersecurity research, I've witnessed firsthand how the digital world has transformed and how our privacy has become increasingly vulnerable. This initiative is my way of giving back to the community by sharing knowledge and awareness.</p>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-avatar">🌍</div>
+                    <h3>The Changing Digital World</h3>
+                    <p><strong>Why This Matters Now</strong></p>
+                    <p>We live in an era where our personal data is constantly collected, analyzed, and monetized. From social media to smart devices, every digital interaction leaves a trace. The world has fundamentally changed, and many people are unaware of the privacy risks they face daily.</p>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-avatar">🎯</div>
+                    <h3>My Goal</h3>
+                    <p><strong>Empowering Digital Citizens</strong></p>
+                    <p>My goal is simple: to help people understand how the digital landscape has evolved and provide them with practical tools and knowledge to protect their privacy and security in this new reality.</p>
+                </div>
+            </div>
+        </section>        <section class="stats-section">
+            <h2>The Digital Privacy Crisis</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">4.5B</div>
+                    <p>People Online Daily</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2.5B</div>
+                    <p>Data Breaches Globally</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">90%</div>
+                    <p>Unaware of Privacy Risks</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <p>Data Collection</p>
+                </div>
+            </div>
+        </section>        <section class="section">
+            <h2>My Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2020</div>
+                    <div class="timeline-content">
+                        <h3>The Wake-Up Call</h3>
+                        <p>Realized how much the digital world had changed and how unprepared most people were for the privacy challenges of the modern internet.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2022</div>
+                    <div class="timeline-content">
+                        <h3>Research & Learning</h3>
+                        <p>Began intensive research into cybersecurity, privacy technologies, and the evolving threat landscape affecting everyday internet users.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content">
+                        <h3>Sharing Knowledge</h3>
+                        <p>Started creating educational content to help others understand the privacy risks and security challenges of our interconnected world.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2025</div>
+                    <div class="timeline-content">
+                        <h3>Privacy Awareness Mission</h3>
+                        <p>Launched this platform to provide comprehensive cybersecurity education and raise awareness about digital privacy in the modern age.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Why Privacy Matters More Than Ever</h2>
+            <div class="mission-section">
+                <h3>📱 The Smartphone Revolution</h3>
+                <p>Our phones have become tracking devices that monitor our every move, conversation, and interaction. Most people don't realize how much personal data is collected and shared every single day.</p>
+                
+                <h3>🏢 Big Tech Surveillance</h3>
+                <p>Major technology companies have built business models around collecting and monetizing personal data. Your digital footprint is worth billions to these companies, but the privacy cost to you is immeasurable.</p>
+                
+                <h3>🎯 Targeted Manipulation</h3>
+                <p>Your data isn't just collected—it's used to influence your behavior, political views, and purchasing decisions. Understanding these mechanisms is crucial for maintaining autonomy in the digital age.</p>
+                
+                <h3>🔓 Data Breach Epidemic</h3>
+                <p>With massive data breaches happening regularly, your personal information is constantly at risk. Learning how to protect yourself has become a necessity, not a luxury.</p>
+            </div>
+        </section>
+    </main>    <footer>
+        <div class="container">
+            <p>&copy; 2025 Dark Web Research. Dedicated to cybersecurity awareness and digital privacy education.</p>
+            <p style="margin-top: 1rem; opacity: 0.8;">
+                <strong>Mission:</strong> Educating people about privacy risks and security challenges in our rapidly changing digital world.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            if (anchor.getAttribute('href').startsWith('#')) {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            }
+        });
+
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe timeline items and cards
+        document.querySelectorAll('.timeline-item, .team-card, .value-card').forEach(item => {
+            item.style.opacity = '0';
+            item.style.transform = 'translateY(20px)';
+            item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(item);
+        });
+    </script>
+</body>
+</html>
