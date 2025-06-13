@@ -301,23 +301,117 @@
             text-align: center;
             padding: 2rem 0;
             margin-top: 3rem;
-        }
+        }        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+                line-height: 1.6;
+            }
 
-        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+
             .article-title {
                 font-size: 2rem;
+                line-height: 1.2;
             }
             
             nav ul {
                 gap: 1rem;
+                padding: 0 10px;
+            }
+
+            nav a {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.9rem;
             }
             
             .article-header, .article-content {
                 padding: 2rem 1rem;
+                margin: 1rem 0;
+            }
+
+            .article-header {
+                padding: 1.5rem 1rem;
+            }
+
+            .article-meta {
+                flex-wrap: wrap;
+                gap: 0.5rem;
+                font-size: 0.8rem;
             }
 
             .tool-grid {
                 grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .tool-card {
+                padding: 1.5rem;
+            }
+
+            .back-to-blog {
+                margin: 1rem 0;
+                font-size: 0.9rem;
+                padding: 0.4rem 0.8rem;
+            }
+
+            .reading-progress {
+                font-size: 0.8rem;
+                bottom: 10px;
+                right: 10px;
+                padding: 0.3rem 0.6rem;
+            }
+
+            .progress-bar {
+                height: 3px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+                margin: 1.5rem 0 1rem 0;
+            }
+
+            h3 {
+                font-size: 1.3rem;
+                margin: 1.2rem 0 0.8rem 0;
+            }
+
+            .cta-section {
+                padding: 2rem 1rem;
+                margin: 2rem 0;
+            }
+
+            .related-articles {
+                padding: 2rem 1rem;
+            }
+
+            .related-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .related-article {
+                padding: 1rem;
+            }
+
+            blockquote {
+                margin: 1rem 0;
+                padding: 1rem;
+                font-size: 1rem;
+            }
+
+            /* Force mobile layout */
+            * {
+                max-width: 100%;
+                overflow-wrap: break-word;
+            }
+
+            table {
+                font-size: 0.8rem;
+                overflow-x: auto;
+                display: block;
+                white-space: nowrap;
             }
         }
     </style>

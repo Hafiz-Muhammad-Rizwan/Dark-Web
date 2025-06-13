@@ -363,9 +363,7 @@
             color: white;
             text-align: center;
             padding: 2rem 0;
-        }
-
-        @media (max-width: 768px) {
+        }        @media (max-width: 768px) {
             h1 {
                 font-size: 2rem;
             }
@@ -374,14 +372,32 @@
                 gap: 1rem;
             }
             
+            /* Mobile responsive blog cards */
             .blog-post {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr !important;
                 gap: 0;
             }
 
             .blog-image {
                 min-height: 200px;
-                order: -1;
+                order: -1 !important; /* Always put image first on mobile */
+            }
+
+            .blog-content {
+                order: 1 !important; /* Always put content after image on mobile */
+            }
+
+            /* Force mobile layout for all blog posts */
+            .blog-post.reverse {
+                grid-template-columns: 1fr !important;
+            }
+
+            .blog-post.reverse .blog-image {
+                order: -1 !important; /* Image first even for reverse layout */
+            }
+
+            .blog-post.reverse .blog-content {
+                order: 1 !important; /* Content second even for reverse layout */
             }
 
             .newsletter-form {
@@ -390,6 +406,14 @@
 
             .newsletter-input {
                 min-width: 100%;
+            }
+
+            .hero-section {
+                padding: 2rem 1rem;
+            }
+
+            .featured-post {
+                padding: 2rem 1rem;
             }
         }
     </style>
@@ -449,9 +473,7 @@
                     <p class="blog-excerpt">Advanced Persistent Threats (APTs) continue to evolve, targeting organizations with sophisticated, long-term attack campaigns. Learn about the latest APT techniques and how to defend against them using cutting-edge detection methods and security frameworks.</p>
                     <a href="blog/advanced-persistent-threats.html" class="read-more">Read More</a>
                 </div>
-            </article>
-
-            <article class="blog-post reverse" data-category="privacy">
+            </article>            <article class="blog-post reverse" data-category="privacy">
                 <div class="blog-content">
                     <div class="blog-meta">
                         <span class="blog-category">Privacy</span>
@@ -484,60 +506,6 @@
                     </div>                    <h3 class="blog-title">Dark Web Marketplace Trends: 2025 Security Analysis</h3>
                     <p class="blog-excerpt">Our quarterly analysis of dark web marketplace activities reveals new trends in cybercriminal operations, cryptocurrency usage patterns, and law enforcement countermeasures. Essential reading for security professionals.</p>
                     <a href="blog/dark-web-marketplace-trends.html" class="read-more">Read More</a>
-                </div>
-            </article>
-
-            <article class="blog-post reverse" data-category="tools">
-                <div class="blog-content">
-                    <div class="blog-meta">
-                        <span class="blog-category">Tools & Tips</span>
-                        <span>📅 June 3, 2025</span>
-                      
-                    </div>                    <h3 class="blog-title">Essential OSINT Tools for Cybersecurity Professionals</h3>
-                    <p class="blog-excerpt">A curated list of the most effective Open Source Intelligence (OSINT) tools for cybersecurity research and threat hunting. Includes detailed tutorials and real-world use cases for each tool.</p>
-                    <a href="blog/osint-tools-cybersecurity.html" class="read-more">Read More</a>
-                </div>
-                <div class="blog-image">
-                    <div class="blog-image-content">
-                        <div>🔧</div>
-                        <p style="font-size: 1rem; margin-top: 1rem;">Tools & Guides</p>
-                    </div>
-                </div>
-            </article>
-
-            <article class="blog-post" data-category="news">
-                <div class="blog-image">
-                    <div class="blog-image-content">
-                        <div>📰</div>
-                        <p style="font-size: 1rem; margin-top: 1rem;">Security News</p>
-                    </div>
-                </div>
-                <div class="blog-content">
-                    <div class="blog-meta">
-                        <span class="blog-category">Security News</span>
-                        <span>📅 June 1, 2025</span>
-                       
-                    </div>                    <h3 class="blog-title">Global Cybersecurity Regulations: What's Changing in 2025</h3>
-                    <p class="blog-excerpt">Major updates to international cybersecurity regulations are reshaping compliance requirements. Our analysis covers new legislation in the EU, US, and Asia-Pacific regions and their impact on businesses.</p>
-                    <a href="blog/cybersecurity-regulations-2025.html" class="read-more">Read More</a>
-                </div>
-            </article>
-
-            <article class="blog-post reverse" data-category="privacy">
-                <div class="blog-content">
-                    <div class="blog-meta">
-                        <span class="blog-category">Privacy</span>
-                        <span>📅 May 28, 2025</span>
-                       
-                    </div>                    <h3 class="blog-title">Quantum Computing vs. Current Encryption: Preparing for the Post-Quantum Era</h3>
-                    <p class="blog-excerpt">As quantum computing advances, current encryption methods face unprecedented challenges. Learn about post-quantum cryptography and how organizations can prepare for this technological shift.</p>
-                    <a href="blog/quantum-computing-encryption.html" class="read-more">Read More</a>
-                </div>
-                <div class="blog-image">
-                    <div class="blog-image-content">
-                        <div>⚛️</div>
-                        <p style="font-size: 1rem; margin-top: 1rem;">Quantum Security</p>
-                    </div>
                 </div>
             </article>
 
